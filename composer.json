@@ -1,0 +1,35 @@
+{
+    "name": "tautiz/cuex",
+    "type": "library",
+    "description": "Currency Exchange rates library for PHP",
+    "homepage": "https://github.com/tautiz/cuex",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Tautvydas Dulskis",
+            "email": "tautvydas@dulskis.eu"
+        }
+    ],
+	"minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "CuEx\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=5.4.0",
+        "egeloen/http-adapter": "~0.1",
+        "doctrine/cache": "~1.0"
+    },
+    "suggest": {
+        "doctrine/cache": "Required to cache with Doctrine"
+    },
+	"config": {
+        "bin-dir": "bin"
+    },
+	"extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    }
+}
